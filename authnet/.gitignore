@@ -1,6 +1,6 @@
 *.DS_Store
 composer.lock
-vendor
+#vendor
 phpunit.xml
 tests/log
 build

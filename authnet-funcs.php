@@ -22,7 +22,7 @@ if (!AUTHORIZENET_SANDBOX)
 	//SANDBOX MODE
 	$AuthNetConfig = Array(
 		"LoginID" => "2cPhA3NsG4M",
-		"TransactionKey" => "5J2drGd564WGC43P",
+		"TransactionKey" => "24N686w42FZvMAjY",
 		"Environment" => \net\authorize\api\constants\ANetEnvironment::SANDBOX,
 	);
 }

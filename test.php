@@ -16,11 +16,11 @@ if (1) {
 	$InvoiceDetails = Array("InvoiceNumber" => rand(1,100000000), "Description" => "Test Order");
 	$CreditCard = Array("Number" => "4111111111111111", "ExpYear" => 2019, "ExpMonth" => 10, "CVV2" => "221");
 	$BillingAddress = Array("FirstName" => "Test", "LastName" => "User", "Company" => "", "CustomerNumber" => "", "Email" => "test@test.com", "Address" => "123 Street", "City" => "Roswell", "State" => "GA", "Zip" => "30076", "Country" => "USA");
-	pa(AuthNet_ChargeCreditCard($CreditCard, $BillingAddress, $InvoiceDetails, $Amount));
+	//pa(AuthNet_ChargeCreditCard($CreditCard, $BillingAddress, $InvoiceDetails, $Amount));
 	
 	
 	$CustomerID = "1557808090"; $PaymentProfileID = "1562924917";
-	//pa(AuthNet_CreateCustomerProfile(3, "greg@appliedimagination.com"));
+	//pa(AuthNet_CreateCustomerProfile(4, "greg@appliedimagination.com"));
 	//pa(AuthNet_GetCustomerProfile($CustomerID));
 	//pa(AuthNet_UpdateCustomerProfile($CustomerID, "greg@appliedimagination.com", 2));
 	
