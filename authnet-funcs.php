@@ -638,9 +638,10 @@ function AuthNet_ChargeCreditCard($CreditCard, $BillingAddress, $InvoiceDetails,
             $tresponse = $response->getTransactionResponse();
         	
             if ($tresponse != null && $tresponse->getMessages() != null) {
-            	
             	return AuthNet_ReturnSuccess(Array(
             			"TransactionCode" => $tresponse->getTransId(),
+						"AuthCode" => $tresponse->getAuthCode(),
+						"TransactionID" => $tresponse->getTransId(),
             			"Code" => $tresponse->getMessages()[0]->getCode(),
             			"Description" => $tresponse->getMessages()[0]->getDescription(),
             		));
