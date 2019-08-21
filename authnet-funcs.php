@@ -625,7 +625,7 @@ function AuthNet_ChargeCreditCard($CreditCard, $BillingAddress, $InvoiceDetails,
     try
     {
 	    $controller = new AnetController\CreateTransactionController($request);
-	    $response = $controller->executeWithApiResponse(\net\authorize\api\constants\ANetEnvironment::SANDBOX);
+	    $response = $controller->executeWithApiResponse($AuthNetConfig["Environment"]);
     } catch(exception $e) {
     	$Errors = [$e->getMessage()];
     	return AuthNet_ReturnFailure($Errors, implode("<br/>", $Errors));
